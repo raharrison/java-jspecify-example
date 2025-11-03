@@ -2,11 +2,12 @@ package com.example.myapp;
 
 public class Main {
 
-    public static void main(String[] args) {
+    static void main() {
         var repo = new UserRepo();
 
         User user = repo.getUserById("1");
-//         System.out.println(user.username()); // possible NPE!
+//        System.out.println(user.username()); // possible NPE!
+
         if (user != null) {
             System.out.println("Found user: " + user.username());
         } else {

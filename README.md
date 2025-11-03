@@ -10,15 +10,14 @@ This project aims to showcase how to integrate and configure these tools in a Ja
 ```bash
 git clone https://github.com/raharrison/java-jspecify-example.git
 cd java-jspecify-example
-./gradlew build
+./gradlew build # by default will pass, directly use nullable object to fail
 ```
 
 ### Notes
 
-- The `UserRepo` class is annotated using `JSpecify`
+- The `UserRepo` class is annotated using `JSpecify` annotations
 - By default, the build is set up to fail if any `NullAway` error is reported
 - Uncomment the line in `Main` to use a nullable object without a check beforehand. This will fail the build
 - `NullAway` will not run on test code
 - `NullAway` is configured to check all files in the specified project package. You can alternatively check only `NullMarked` code
-  by annotating each class
-  or through an annotated `package-info.java` file
+  by annotating each class or through an annotated `package-info.java` file

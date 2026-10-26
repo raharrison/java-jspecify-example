@@ -3,8 +3,8 @@ import net.ltgt.gradle.errorprone.errorprone
 plugins {
     application
     id("java")
-    id("com.gradleup.shadow") version "9.2.2"
-    id("net.ltgt.errorprone") version "4.3.0"
+    id("com.gradleup.shadow") version "9.6.1"
+    id("net.ltgt.errorprone") version "5.1.1"
 }
 
 group = "com.example.myapp"
@@ -15,13 +15,13 @@ repositories {
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:6.0.0"))
+    testImplementation(platform("org.junit:junit-bom:6.1.3"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
-    implementation("org.jspecify:jspecify:1.0.0")
-    errorprone("com.google.errorprone:error_prone_core:2.43.0")
-    errorprone("com.uber.nullaway:nullaway:0.12.11")
+    implementation("org.jspecify:jspecify:1.0.1")
+    errorprone("com.google.errorprone:error_prone_core:2.51.0")
+    errorprone("com.uber.nullaway:nullaway:0.14.3")
 }
 
 tasks.test {

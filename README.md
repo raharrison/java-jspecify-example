@@ -1,6 +1,6 @@
 # Java JSpecify Example
 
-Aa minimal Java project demonstrating the usage of `JSpecify` annotations, `NullAway`, and `Error Prone` static analysis tools.
+A minimal Java project demonstrating the usage of `JSpecify` annotations, `NullAway`, and `Error Prone` static analysis tools.
 This project aims to showcase how to integrate and configure these tools in a Java project using `Gradle`.
 
 ---
